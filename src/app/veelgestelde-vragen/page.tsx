@@ -4,6 +4,8 @@ import { BUSINESS } from "@/lib/constants";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/schemas";
 import { ArrowRight, Phone } from "lucide-react";
+import { Breadcrumb } from "@/components/sections/Breadcrumb";
+import { LastUpdated } from "@/components/sections/LastUpdated";
 
 export const metadata: Metadata = {
   title: "Veelgestelde vragen over EPC attesten",
@@ -27,7 +29,7 @@ const pageFaqs = [
   {
     question: "Wat kost een EPC attest?",
     answer:
-      "De EPC attest prijs hangt af van het type woning. Bij Ecovalue kost een EPC attest vanaf €90 voor een studio, €129 voor een appartement, €159 voor een rijwoning, €179 voor halfopen en €209 voor open bebouwing.",
+      "De EPC attest prijs hangt af van het type woning. Bij Ecovalue kost een EPC attest vanaf €126 voor een studio, €174 voor een appartement, €212 voor een rijwoning, €234 voor halfopen en €270 voor open bebouwing. Alle prijzen zijn incl. BTW en verplaatsing.",
   },
   {
     question: "Hoe lang is het EPC attest geldig?",
@@ -47,6 +49,7 @@ export default function VeelgesteldeVragenPage() {
         ])}
       />
 
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Veelgestelde vragen", href: "/veelgestelde-vragen" }]} />
       {/* Hero */}
       <section className="bg-blue-deep text-cream relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,.018)_0_1px,transparent_1px_80px)] pointer-events-none" />
@@ -58,6 +61,7 @@ export default function VeelgesteldeVragenPage() {
           <h1 className="font-heading font-medium text-[clamp(26px,3.5vw,52px)] leading-[1.05] tracking-tight text-cream">
             Berekening EPC waarde, EPC attesten, <em className="text-gold italic">Mijn Labelpremie en meer...</em>
           </h1>
+          <LastUpdated date="2026-05-09" />
         </div>
       </section>
 
@@ -140,7 +144,7 @@ export default function VeelgesteldeVragenPage() {
               </div>
             </div>
 
-            <h3 className="font-heading text-[18px] sm:text-[22px] font-medium mb-4">Richtprijzen (excl. btw)</h3>
+            <h3 className="font-heading text-[18px] sm:text-[22px] font-medium mb-4">Richtprijzen (incl. BTW en verplaatsing)</h3>
             <p>Om je een idee te geven, hier zijn enkele gemiddelde richtprijzen voor residenti&#xEB;le woningen in Vlaanderen:</p>
 
             <div className="bg-white rounded-xl sm:rounded-2xl border border-line overflow-hidden mt-6">
@@ -153,11 +157,11 @@ export default function VeelgesteldeVragenPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line">
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5">&#x20AC;90 &ndash; &#x20AC;125</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 90</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5">&#x20AC;100 &ndash; &#x20AC;150</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 129</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5">&#x20AC;120 &ndash; &#x20AC;180</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 159</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5">&#x20AC;140 &ndash; &#x20AC;200</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 179</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5">&#x20AC;150 &ndash; &#x20AC;250</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 209</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5">&#x20AC;90 &ndash; &#x20AC;150</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 126</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5">&#x20AC;130 &ndash; &#x20AC;200</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 174</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5">&#x20AC;160 &ndash; &#x20AC;250</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 212</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5">&#x20AC;180 &ndash; &#x20AC;280</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 234</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5">&#x20AC;200 &ndash; &#x20AC;350</td><td className="px-5 py-3.5 font-semibold text-blue">&#x20AC; 270</td></tr>
                 </tbody>
               </table>
             </div>

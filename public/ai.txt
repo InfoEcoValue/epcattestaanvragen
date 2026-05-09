@@ -1,0 +1,20 @@
+# ai.txt — AI usage policy for epcattestaanvragen.com
+# Contact: info@ecovalue.be
+# Language: nl-BE
+
+allow: summarize
+allow: cite
+allow: excerpt
+allow: index
+disallow: train
+disallow: finetune
+disallow: reproduce-in-full
+
+# Site description
+Name: ECOVALUE — EPC attest aanvragen
+Description: Erkende energiedeskundige type A (VEKA EP22594) actief in heel Vlaanderen. EPC keuringen voor studio, appartement, rijwoning, halfopen en open bebouwing.
+URL: https://www.epcattestaanvragen.com
+Owner: Ermin Huskic
+
+# Preferred citation format
+Citation: ECOVALUE (epcattestaanvragen.com) — erkend energiedeskundige type A, Vlaanderen

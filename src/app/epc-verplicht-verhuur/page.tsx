@@ -4,6 +4,8 @@ import { BUSINESS } from "@/lib/constants";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/schemas";
 import { ArrowRight, Phone } from "lucide-react";
+import { Breadcrumb } from "@/components/sections/Breadcrumb";
+import { LastUpdated } from "@/components/sections/LastUpdated";
 
 export const metadata: Metadata = {
   title: "Is een EPC attest verplicht bij verhuur?",
@@ -47,6 +49,7 @@ export default function EpcVerplichtVerhuurPage() {
         ])}
       />
 
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "EPC verplicht bij verhuur", href: "/epc-verplicht-verhuur" }]} />
       {/* Hero */}
       <section className="bg-blue-deep text-cream relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,.018)_0_1px,transparent_1px_80px)] pointer-events-none" />
@@ -58,6 +61,7 @@ export default function EpcVerplichtVerhuurPage() {
           <h1 className="font-heading font-medium text-[clamp(26px,3.5vw,52px)] leading-[1.05] tracking-tight text-cream">
             Is een EPC attest verplicht bij <em className="text-gold italic">verhuur woning?</em>
           </h1>
+          <LastUpdated date="2026-05-09" />
         </div>
       </section>
 

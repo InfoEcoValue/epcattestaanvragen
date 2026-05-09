@@ -77,6 +77,7 @@ export function Footer() {
             Info
           </h4>
           <ul className="flex flex-col gap-2 sm:gap-2.5 text-[13px] sm:text-[14.5px] text-cream/75">
+            <li><Link href="/over-ons" className="hover:text-white transition-colors">Over ons</Link></li>
             <li><Link href="/epc-attest" className="hover:text-white transition-colors">Wat is een EPC-attest?</Link></li>
             <li><Link href="/epc-waarden-tabel" className="hover:text-white transition-colors">EPC-waarden tabel</Link></li>
             <li><Link href="/epc-attest-geldigheid" className="hover:text-white transition-colors">Geldigheid attest</Link></li>
@@ -98,6 +99,20 @@ export function Footer() {
             <li>Ma-Vr · 8:30-18:00</li>
             <li>Za · op afspraak</li>
           </ul>
+        </div>
+      </div>
+
+      {/* E-E-A-T strip */}
+      <div className="border-t border-cream/10 bg-blue-deep/60">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 py-4 flex flex-wrap gap-x-6 gap-y-1.5 text-[11px] sm:text-[12px] text-cream/45">
+          <span>Erkend energiedeskundige <strong className="text-cream/65 font-medium">Type A</strong></span>
+          <span>VEKA erkend · Vlaanderen</span>
+          <span>Ondernemingsnummer: <strong className="text-cream/65 font-medium">1012.878.453</strong></span>
+          <span>
+            <a href="https://ecovalue.be" target="_blank" rel="noopener noreferrer" className="hover:text-cream/70 transition-colors">
+              ecovalue.be
+            </a>
+          </span>
         </div>
       </div>
 

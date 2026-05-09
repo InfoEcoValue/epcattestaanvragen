@@ -27,11 +27,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "EPC attest aanvragen vanaf €90 | ECOVALUE",
+    default: "EPC attest aanvragen vanaf €126 | ECOVALUE",
     template: "%s | ECOVALUE",
   },
   description:
-    "EPC keuring door erkende energiedeskundige. Afspraak binnen 3 dagen, EPC attest binnen 24 uur. Studio vanaf €90. Heel Vlaanderen.",
+    "EPC keuring door erkende energiedeskundige. Afspraak binnen 3 dagen, EPC attest binnen 24 uur. Studio vanaf €126. Heel Vlaanderen.",
   metadataBase: new URL("https://www.epcattestaanvragen.com"),
   openGraph: {
     type: "website",

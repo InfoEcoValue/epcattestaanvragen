@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, PRICES } from "@/lib/constants";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
-import { buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/schemas";
+import { buildFaqSchema, buildBreadcrumbSchema, buildServiceSchema } from "@/components/seo/schemas";
 import { ArrowRight, Phone } from "lucide-react";
+import { Breadcrumb } from "@/components/sections/Breadcrumb";
+import { LastUpdated } from "@/components/sections/LastUpdated";
 
 export const metadata: Metadata = {
-  title: "EPC keuring prijs per type woning | Vanaf €90",
+  title: "EPC keuring prijs per type woning | Vanaf €126",
   description:
-    "Ontdek de EPC keuring prijs per type woning: studio vanaf €90, appartement €125, rijwoning €150. Plaatsbezoek binnen 3 dagen, attest binnen 24 uur.",
+    "Ontdek de EPC keuring prijs per type woning: studio vanaf €126, appartement €174, rijwoning €212. Incl. BTW en verplaatsing. Plaatsbezoek binnen 3 dagen, attest binnen 24 uur.",
   openGraph: {
-    title: "EPC keuring prijs per type woning | Vanaf €90",
+    title: "EPC keuring prijs per type woning | Vanaf €126",
     description:
-      "EPC keuring prijs: studio €90, appartement €125, rijwoning €150, halfopen €175, open bebouwing €200.",
+      "EPC keuring prijs: studio €126, appartement €174, rijwoning €212, halfopen €234, open bebouwing €270. Incl. BTW en verplaatsing.",
     url: `${BUSINESS.website}/epc-keuring-prijs`,
     type: "article",
   },
@@ -22,7 +24,7 @@ const pageFaqs = [
   {
     question: "Wat kost een EPC keuring?",
     answer:
-      "De EPC keuring prijs begint bij €90 voor een studio. Appartement €125, rijwoning €150, halfopen bebouwing €175 en open bebouwing €200. Bij ECOVALUE geen bijkomende kosten voor spoedservice.",
+      "De EPC keuring prijs begint bij €126 voor een studio. Appartement €174, rijwoning €212, halfopen bebouwing €234 en open bebouwing €270. Alle prijzen zijn incl. BTW en verplaatsing.",
   },
   {
     question: "Wat zijn de voordelen van een lage EPC waarde?",
@@ -37,11 +39,11 @@ const pageFaqs = [
 ];
 
 const pricingCards = [
-  { type: "Studio", price: "90", href: "/contact" },
-  { type: "Appartement", price: "125", href: "/contact" },
-  { type: "Rijwoning", price: "150", href: "/contact" },
-  { type: "Half open bebouwing", price: "175", href: "/contact" },
-  { type: "Open bebouwing", price: "200", href: "/contact" },
+  { type: "Studio", price: "126", href: "/contact" },
+  { type: "Appartement", price: "174", href: "/contact" },
+  { type: "Rijwoning", price: "212", href: "/contact" },
+  { type: "Half open bebouwing", price: "234", href: "/contact" },
+  { type: "Open bebouwing", price: "270", href: "/contact" },
 ];
 
 export default function EpcKeuringPrijsPage() {
@@ -54,7 +56,15 @@ export default function EpcKeuringPrijsPage() {
           { name: "EPC keuring prijs", url: `${BUSINESS.website}/epc-keuring-prijs` },
         ])}
       />
+      <SchemaOrg
+        schema={buildServiceSchema(
+          "EPC keuring voor residentiële gebouwen",
+          "Erkend EPC attest voor studio, appartement, rijwoning, halfopen en open bebouwing. Plaatsbezoek binnen 3 dagen, attest binnen 24 uur. Incl. BTW en verplaatsing.",
+          PRICES.rijwoning.price
+        )}
+      />
 
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "EPC keuring prijs", href: "/epc-keuring-prijs" }]} />
       {/* Hero */}
       <section className="bg-blue-deep text-cream relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,.018)_0_1px,transparent_1px_80px)] pointer-events-none" />
@@ -66,6 +76,7 @@ export default function EpcKeuringPrijsPage() {
           <h1 className="font-heading font-medium text-[clamp(26px,3.5vw,52px)] leading-[1.05] tracking-tight text-cream mb-6">
             EPC keuring prijs per <em className="text-gold italic">type woning</em>
           </h1>
+          <LastUpdated date="2026-05-09" />
           {/* Pricing cards */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
             {pricingCards.map(({ type, price }) => (
@@ -75,7 +86,7 @@ export default function EpcKeuringPrijsPage() {
               </div>
             ))}
           </div>
-          <p className="mt-6 text-[13px] sm:text-[14px] text-cream/60">Excl. btw &bull; Plaatsbezoek binnen 3 dagen &bull; Attest binnen 24 uur</p>
+          <p className="mt-6 text-[13px] sm:text-[14px] text-cream/60">Incl. BTW en verplaatsing &bull; Plaatsbezoek binnen 3 dagen &bull; Attest binnen 24 uur</p>
         </div>
       </section>
 

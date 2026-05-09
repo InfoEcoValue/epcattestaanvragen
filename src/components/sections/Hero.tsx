@@ -19,7 +19,7 @@ export function Hero() {
 
         <p className="mt-4 sm:mt-6 text-[16px] sm:text-[18px] leading-relaxed text-ink-2 max-w-[520px]">
           U vraagt online aan, wij staan binnen drie dagen op uw stoep. 24 uur
-          later vindt u uw officieel certificaat in uw mailbox — vanaf €90,
+          later vindt u uw officieel certificaat in uw mailbox — vanaf €126,
           zonder verrassingen.
         </p>
 
@@ -50,14 +50,14 @@ export function Hero() {
           </svg>
           <span className="text-gold tracking-wide text-[13px] sm:text-sm">★★★★★</span>
           <span>
-            <strong className="text-ink font-semibold">4,9/5</strong> · 187 Google-reviews
+            <strong className="text-ink font-semibold">4,9/5</strong> · 56 Google-reviews
           </span>
         </div>
 
         {/* Stats */}
         <div className="mt-6 sm:mt-9 grid grid-cols-2 sm:flex sm:flex-row gap-6 sm:gap-9 pt-6 sm:pt-7 border-t border-line">
           {[
-            { value: "€", num: "90", label: "Vanaf-prijs studio" },
+            { value: "€", num: "126", label: "Vanaf-prijs studio" },
             { value: "", num: "24", sup: "u", label: "Attest in mailbox" },
             { value: "", num: "3", sup: "d", label: "Plaatsbezoek gegarandeerd" },
             { value: "", num: "700", sup: "+", label: "Attesten uitgereikt" },

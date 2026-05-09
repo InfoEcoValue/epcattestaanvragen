@@ -2,8 +2,10 @@ import { BUSINESS, PRICES } from "@/lib/constants";
 
 export const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "ProfessionalService",
   name: BUSINESS.name,
+  description:
+    "Erkende energiedeskundige type A — EPC attest aanvragen voor residentiële gebouwen in heel Vlaanderen. Plaatsbezoek binnen 3 dagen, attest binnen 24 uur.",
   url: BUSINESS.website,
   telephone: BUSINESS.phone,
   email: BUSINESS.email,
@@ -19,6 +21,29 @@ export const localBusinessSchema = {
     name: BUSINESS.serviceArea,
   },
   priceRange: `€${PRICES.studio.price} - €${PRICES.open.price}`,
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Saturday"],
+      opens: "09:00",
+      closes: "13:00",
+      description: "Op afspraak",
+    },
+  ],
+  sameAs: ["https://ecovalue.be"],
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "56",
+    bestRating: "5",
+    worstRating: "1",
+  },
 };
 
 export function buildFaqSchema(
@@ -64,14 +89,25 @@ export function buildServiceSchema(
     name,
     description,
     provider: {
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       name: BUSINESS.name,
+      url: BUSINESS.website,
+      telephone: BUSINESS.phone,
     },
-    areaServed: BUSINESS.serviceArea,
+    areaServed: {
+      "@type": "State",
+      name: BUSINESS.serviceArea,
+    },
     offers: {
       "@type": "Offer",
       price: price.toString(),
       priceCurrency: "EUR",
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: price.toString(),
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: true,
+      },
     },
   };
 }

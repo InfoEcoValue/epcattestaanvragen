@@ -4,6 +4,8 @@ import { BUSINESS } from "@/lib/constants";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
 import { buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/schemas";
 import { ArrowRight, Phone } from "lucide-react";
+import { Breadcrumb } from "@/components/sections/Breadcrumb";
+import { LastUpdated } from "@/components/sections/LastUpdated";
 
 export const metadata: Metadata = {
   title: "Wat is een EPC attest en Waarom is het zo belangrijk?",
@@ -46,6 +48,7 @@ export default function EpcAttestPage() {
         ])}
       />
 
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "Wat is een EPC attest?", href: "/epc-attest" }]} />
       {/* Hero */}
       <section className="bg-blue-deep text-cream relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,.018)_0_1px,transparent_1px_80px)] pointer-events-none" />
@@ -57,6 +60,7 @@ export default function EpcAttestPage() {
           <h1 className="font-heading font-medium text-[clamp(26px,3.5vw,52px)] leading-[1.05] tracking-tight text-cream mb-4 sm:mb-6">
             Wat is een EPC attest en <em className="text-gold italic">Waarom is het zo belangrijk?</em>
           </h1>
+          <LastUpdated date="2026-05-09" />
           <p className="text-[15px] sm:text-base text-cream/75 max-w-[720px] leading-relaxed">
             Alles wat je moet weten over het EPC attest, een eenvoudige gids.
           </p>

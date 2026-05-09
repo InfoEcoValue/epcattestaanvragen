@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BUSINESS } from "@/lib/constants";
+import { BUSINESS, PRICES } from "@/lib/constants";
 import { SchemaOrg } from "@/components/seo/SchemaOrg";
-import { buildFaqSchema, buildBreadcrumbSchema } from "@/components/seo/schemas";
+import { buildFaqSchema, buildBreadcrumbSchema, buildServiceSchema } from "@/components/seo/schemas";
 import { ArrowRight, Phone } from "lucide-react";
+import { Breadcrumb } from "@/components/sections/Breadcrumb";
+import { LastUpdated } from "@/components/sections/LastUpdated";
 
 export const metadata: Metadata = {
-  title: "EPC attest prijs – Wat kost een EPC-attest?",
+  title: "EPC attest prijs – Welke factoren bepalen de kostprijs?",
   description:
-    "Wat kost een EPC attest? Studio €90, appartement €129, rijwoning €159, halfopen €179, open bebouwing €209. Ontdek alle factoren die de prijs bepalen.",
+    "Wat bepaalt de prijs van een EPC attest? Woningtype, oppervlakte, plannen en concurrentie. Tarieven: studio €126, rijwoning €212, open bebouwing €270 — incl. BTW en verplaatsing.",
   openGraph: {
-    title: "EPC attest prijs – Wat kost een EPC-attest?",
+    title: "EPC attest prijs – Welke factoren bepalen de kostprijs?",
     description:
-      "Wat kost een EPC attest? Studio €90, appartement €129, rijwoning €159, halfopen €179, open bebouwing €209.",
+      "Oppervlakte, woningtype, bouwplannen en regionale concurrentie: zo wordt de EPC attest prijs opgebouwd. Studio €126 t/m open bebouwing €270, incl. BTW en verplaatsing.",
     url: `${BUSINESS.website}/epc-attest-prijs`,
     type: "article",
   },
@@ -22,7 +24,7 @@ const pageFaqs = [
   {
     question: "Wat kost een EPC attest?",
     answer:
-      "De EPC attest prijs bij ECOVALUE: studio €90, appartement €129, rijwoning €159, halfopen bebouwing €179, open bebouwing €209 (excl. btw).",
+      "De EPC attest prijs bij ECOVALUE: studio €126, appartement €174, rijwoning €212, halfopen bebouwing €234, open bebouwing €270 (incl. BTW en verplaatsing).",
   },
   {
     question: "Hoe wordt de EPC attest prijs opgebouwd?",
@@ -46,7 +48,15 @@ export default function EpcAttestPrijsPage() {
           { name: "EPC attest prijs", url: `${BUSINESS.website}/epc-attest-prijs` },
         ])}
       />
+      <SchemaOrg
+        schema={buildServiceSchema(
+          "EPC attest — kostprijsbepaling per woningtype",
+          "Transparante EPC attest prijzen per woningtype. De kostprijs wordt bepaald door woningtype, oppervlakte, aanwezigheid van bouwplannen en regionale concurrentie.",
+          PRICES.studio.price
+        )}
+      />
 
+      <Breadcrumb items={[{ name: "Home", href: "/" }, { name: "EPC attest prijs", href: "/epc-attest-prijs" }]} />
       {/* Hero */}
       <section className="bg-blue-deep text-cream relative overflow-hidden">
         <div className="absolute inset-0 bg-[repeating-linear-gradient(135deg,rgba(255,255,255,.018)_0_1px,transparent_1px_80px)] pointer-events-none" />
@@ -56,8 +66,9 @@ export default function EpcAttestPrijsPage() {
             Prijzen
           </div>
           <h1 className="font-heading font-medium text-[clamp(26px,3.5vw,52px)] leading-[1.05] tracking-tight text-cream">
-            EPC attest prijs, wat kost het? <em className="text-gold italic">Bestel jouw EPC vanaf &#x20AC;90</em>
+            EPC attest prijs, wat kost het? <em className="text-gold italic">Bestel jouw EPC vanaf &#x20AC;126</em>
           </h1>
+          <LastUpdated date="2026-05-09" />
         </div>
       </section>
 
@@ -159,11 +170,11 @@ export default function EpcAttestPrijsPage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line">
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5 font-semibold">EUR 90,00</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5 font-semibold">EUR 129,00</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5 font-semibold">EUR 159,00</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5 font-semibold">EUR 179,00</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5 font-semibold">EUR 209,00</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5 font-semibold">EUR 126,00</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5 font-semibold">EUR 174,00</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5 font-semibold">EUR 212,00</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5 font-semibold">EUR 234,00</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5 font-semibold">EUR 270,00</td></tr>
                 </tbody>
               </table>
             </div>

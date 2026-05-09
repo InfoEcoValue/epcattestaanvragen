@@ -17,12 +17,14 @@ export const BUSINESS = {
 } as const;
 
 export const PRICES = {
-  studio: { label: "Studio", price: 90, desc: "Tot ±40 m², één wooneenheid", visit: "30-45 min" },
-  appartement: { label: "Appartement", price: 125, desc: "Eén verdieping, één eenheid", visit: "±45 min" },
-  rijwoning: { label: "Rijwoning", price: 150, desc: "Aaneengesloten, twee gemene muren", visit: "60 min", featured: true },
-  halfopen: { label: "Halfopen bebouwing", price: 175, desc: "Eén gemene muur", visit: "60-75 min" },
-  open: { label: "Open bebouwing", price: 200, desc: "Vrijstaande woning", visit: "75-90 min" },
+  studio: { label: "Studio", price: 126, desc: "Tot ±40 m², één wooneenheid", visit: "30-45 min" },
+  appartement: { label: "Appartement", price: 174, desc: "Eén verdieping, één eenheid", visit: "±45 min" },
+  rijwoning: { label: "Rijwoning", price: 212, desc: "Aaneengesloten, twee gemene muren", visit: "60 min", featured: true },
+  halfopen: { label: "Halfopen bebouwing", price: 234, desc: "Eén gemene muur", visit: "60-75 min" },
+  open: { label: "Open bebouwing", price: 270, desc: "Vrijstaande woning", visit: "75-90 min" },
 } as const;
+
+export const TRAVEL_FEE = 14;
 
 export const EXTRAS = [
   { id: "asbest", name: "Asbestattest", desc: "Verplicht voor woningen ≤2001", price: 195 },
@@ -62,6 +64,7 @@ export const NAV_LINKS = [
     ],
   },
   { href: "/diensten", label: "Diensten" },
+  { href: "/over-ons", label: "Over ons" },
   { href: "/contact", label: "Contact" },
 ] as const;
 

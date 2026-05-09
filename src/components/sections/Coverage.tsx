@@ -1,5 +1,10 @@
+import Link from "next/link";
 import { BUSINESS, COVERAGE_CITIES } from "@/lib/constants";
 import { Clock } from "lucide-react";
+
+function citySlug(city: string) {
+  return city.toLowerCase().replace(/\s+/g, "-");
+}
 
 export function Coverage() {
   return (
@@ -21,13 +26,14 @@ export function Coverage() {
           </p>
           <div className="mt-6 sm:mt-8 flex flex-wrap gap-1.5 sm:gap-2">
             {COVERAGE_CITIES.map((city) => (
-              <span
+              <Link
                 key={city}
-                className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-white border border-line-2 text-[12px] sm:text-[13.5px] text-ink-2 font-medium"
+                href={`/epc-attest/${citySlug(city)}`}
+                className="inline-flex items-center gap-1.5 px-3 sm:px-3.5 py-1.5 sm:py-2 rounded-full bg-white border border-line-2 text-[12px] sm:text-[13.5px] text-ink-2 font-medium hover:border-blue hover:text-blue transition-colors"
               >
                 <span className="w-[5px] h-[5px] rounded-full bg-blue" />
                 {city}
-              </span>
+              </Link>
             ))}
           </div>
           <div className="mt-5 sm:mt-7 text-[12px] sm:text-[13.5px] text-muted flex items-center gap-2.5">

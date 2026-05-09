@@ -24,8 +24,8 @@ export function PricingTable() {
           </h2>
         </div>
         <div className="text-[15px] sm:text-base text-ink-2 max-w-[420px] leading-relaxed pb-1.5">
-          Geen verborgen kosten, geen meerprijzen voor spoed. Onze richtprijzen
-          liggen vast op basis van het type en de oppervlakte.
+          Alle prijzen zijn incl. BTW en verplaatsing (€14). Geen verborgen
+          kosten, geen meerprijzen voor spoed.
         </div>
       </div>
 

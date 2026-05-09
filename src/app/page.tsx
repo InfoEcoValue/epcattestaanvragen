@@ -18,7 +18,7 @@ const homeFaqs = [
   {
     question: "Wat kost een EPC attest aanvragen bij ECOVALUE?",
     answer:
-      "De prijzen voor een epc attest aanvragen zijn helder en hangen af van type woning. Bij Ecovalue kun je al een epc attest aanvragen vanaf € 90.",
+      "De prijzen voor een epc attest aanvragen zijn helder en hangen af van type woning. Bij Ecovalue kun je al een epc attest aanvragen vanaf € 126 (incl. BTW en verplaatsing).",
   },
   {
     question: "Hoe maak ik een afspraak voor de EPC inspectie?",
@@ -171,7 +171,7 @@ export default function HomePage() {
                 <p>
                   De prijzen voor een <strong>epc attest aanvragen</strong> zijn helder en hangen af van type woning. Bij{" "}
                   <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">Ecovalue</a>{" "}
-                  kun je al een <strong>epc attest aanvragen</strong> vanaf € 90. Hieronder zie je een overzicht van onze prijzen.
+                  kun je al een <strong>epc attest aanvragen</strong> vanaf € 126 (incl. BTW en verplaatsing). Hieronder zie je een overzicht van onze prijzen.
                 </p>
               </div>
             </div>
@@ -184,11 +184,11 @@ export default function HomePage() {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-line">
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5 font-semibold">€ 90</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5 font-semibold">€ 125</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5 font-semibold">€ 150</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5 font-semibold">€ 175</td></tr>
-                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5 font-semibold">€ 200</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Studio</td><td className="px-5 py-3.5 font-semibold">€ 126</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Appartement</td><td className="px-5 py-3.5 font-semibold">€ 174</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Rijwoning</td><td className="px-5 py-3.5 font-semibold">€ 212</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Halfopen bebouwing</td><td className="px-5 py-3.5 font-semibold">€ 234</td></tr>
+                  <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Open bebouwing</td><td className="px-5 py-3.5 font-semibold">€ 270</td></tr>
                 </tbody>
               </table>
             </div>
@@ -280,7 +280,7 @@ export default function HomePage() {
                   <Link href="/epc-waarde-berekenen" className="text-blue hover:underline">EPC waarde berekenen</Link>{" "}
                   doen we aldus binnen een <strong>maximumtermijn</strong> van 4 dagen na de aanvraag. Onze{" "}
                   <Link href="/epc-keuring-prijs" className="text-blue hover:underline">EPC keuringen</Link>{" "}
-                  hebben een kostprijs vanaf 90€.
+                  hebben een kostprijs vanaf 126€ (incl. BTW en verplaatsing).
                 </p>
               </div>
               <div className="p-5 sm:p-7 bg-white rounded-xl sm:rounded-2xl border border-line">
@@ -459,7 +459,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   Onze{" "}
-                  <Link href="/diensten" className="text-blue hover:underline">EPC keuring prijs begint vanaf 90€.</Link>
+                  <Link href="/diensten" className="text-blue hover:underline">EPC keuring prijs begint vanaf 126€.</Link>
                 </p>
                 <p>
                   Je kan hier jouw{" "}
@@ -638,7 +638,7 @@ export default function HomePage() {
                   <a href="https://www.bobex.be/nl-be/epc-certificaat/verplicht-bij-verkoop/geldigheid/#:~:text=Een%20EPC%20attest%20(ook%20wel,%2C%20blijft%205%20jaar%20geldig)." target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">10 jaar</a>{" "}
                   na de{" "}
                   <Link href="/diensten" className="text-blue hover:underline">EPC-keuring</Link>.
-                  Als het EPC-attest verouderd is, kan het nodig zijn om een nieuwe epc keuring te laten uitvoeren. De kostprijs van een EPC keuring bij ECOVALUE loopt vanaf 90€ voor studios.
+                  Als het EPC-attest verouderd is, kan het nodig zijn om een nieuwe epc keuring te laten uitvoeren. De kostprijs van een EPC keuring bij ECOVALUE loopt vanaf 126€ voor studios (incl. BTW en verplaatsing).
                 </p>
                 <p>
                   Overweeg het advies van de{" "}

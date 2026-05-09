@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+  --font-heading: var(--font-fraunces), Georgia, serif;
+
+  /* Design tokens */
+  --color-ink: #1a1f1c;
+  --color-ink-2: #3d453f;
+  --color-muted: #6b746d;
+  --color-line: #e2dccf;
+  --color-line-2: #d6cfbe;
+  --color-cream: #f5f1e8;
+  --color-cream-2: #ede7d8;
+  --color-paper: #fbf8f1;
+  --color-blue: #0a7ebd;
+  --color-blue-2: #0967a0;
+  --color-blue-deep: #063e63;
+  --color-blue-soft: #cfe4f2;
+  --color-gold: #e0a93a;
+  --color-gold-2: #b8821f;
+  --color-yellow: #f4c430;
+  --color-warm-green: #3a9b6e;
+
+  /* shadcn overrides */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  --background: #fbf8f1;
+  --foreground: #1a1f1c;
+  --card: #ffffff;
+  --card-foreground: #1a1f1c;
+  --popover: #ffffff;
+  --popover-foreground: #1a1f1c;
+  --primary: #0a7ebd;
+  --primary-foreground: #f5f1e8;
+  --secondary: #f5f1e8;
+  --secondary-foreground: #1a1f1c;
+  --muted: #f5f1e8;
+  --muted-foreground: #6b746d;
+  --accent: #f5f1e8;
+  --accent-foreground: #1a1f1c;
+  --destructive: #c0392b;
+  --border: #e2dccf;
+  --input: #d6cfbe;
+  --ring: #0a7ebd;
+  --radius: 0.625rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-paper text-ink;
+    font-family: var(--font-inter), -apple-system, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-fraunces), Georgia, serif;
+    font-weight: 500;
+    letter-spacing: -0.02em;
+    color: var(--color-ink);
+  }
+}

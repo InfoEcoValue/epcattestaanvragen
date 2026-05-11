@@ -1,10 +1,11 @@
-import { Shield, Clock, Calendar, Plus } from "lucide-react";
+import { Shield, Clock, Calendar, Plus, BadgeCheck } from "lucide-react";
 
 const items = [
   { icon: Shield, bold: "Erkend", text: "energiedeskundige Type A" },
   { icon: Clock, bold: "24u", text: "attest in mailbox na bezoek" },
   { icon: Calendar, text: "Afspraak", bold2: "binnen 3 dagen" },
   { icon: Plus, text: "Combineer met", bold2: "asbest- & elektrische keuring" },
+  { icon: BadgeCheck, bold: "VEKA EP22594", text: "· erkend type A" },
 ];
 
 export function TrustStrip() {

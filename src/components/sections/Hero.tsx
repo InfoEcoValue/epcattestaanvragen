@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import { BUSINESS } from "@/lib/constants";
 import { ArrowRight, Phone } from "lucide-react";
@@ -25,7 +26,7 @@ export function Hero() {
 
         <div className="mt-6 sm:mt-9 flex flex-col sm:flex-row flex-wrap gap-3 items-stretch sm:items-center">
           <Link
-            href="/contact"
+            href="/?type=studio#aanvragen"
             className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all hover:-translate-y-px hover:shadow-md"
           >
             EPC-keuring aanvragen
@@ -60,7 +61,7 @@ export function Hero() {
             { value: "€", num: "126", label: "Vanaf-prijs studio" },
             { value: "", num: "24", sup: "u", label: "Attest in mailbox" },
             { value: "", num: "3", sup: "d", label: "Plaatsbezoek gegarandeerd" },
-            { value: "", num: "700", sup: "+", label: "Attesten uitgereikt" },
+            { value: "", num: "700", sup: "+", label: "Attesten · sinds 2024" },
           ].map((stat) => (
             <div key={stat.label}>
               <div className="font-heading text-[26px] sm:text-[32px] font-medium leading-none text-blue tracking-tight">
@@ -84,7 +85,9 @@ export function Hero() {
 
       {/* Hero visual — interactive wizard */}
       <div className="flex flex-col gap-3 sm:gap-4" id="aanvragen">
-        <HeroWizard />
+        <Suspense fallback={null}>
+          <HeroWizard />
+        </Suspense>
 
         {/* Photo strip */}
         <div className="grid grid-cols-[80px_1fr] sm:grid-cols-[104px_1fr] gap-3 sm:gap-3.5 items-center p-2.5 sm:p-3 bg-white border border-line-2 rounded-xl sm:rounded-[14px] shadow-sm">

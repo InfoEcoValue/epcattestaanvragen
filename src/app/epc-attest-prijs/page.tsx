@@ -221,7 +221,7 @@ export default function EpcAttestPrijsPage() {
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
             >
               EPC attest aanvragen

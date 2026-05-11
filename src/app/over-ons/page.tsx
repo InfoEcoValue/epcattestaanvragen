@@ -171,8 +171,8 @@ export default function OverOnsPage() {
               </div>
 
               <div className="p-4 sm:p-5 bg-cream rounded-xl border border-line text-[13px] sm:text-[14px] text-ink-2">
-                <span className="font-medium text-ink">Ondernemingsnummer:</span>{" "}
-                1012.878.453
+                <span className="font-medium text-ink">BTW:</span>{" "}
+                BE 1030.333.802
               </div>
             </div>
           </div>
@@ -314,7 +314,7 @@ export default function OverOnsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC keuring aanvragen

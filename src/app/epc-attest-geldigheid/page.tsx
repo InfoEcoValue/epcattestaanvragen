@@ -155,7 +155,7 @@ export default function EpcAttestGeldigheidPage() {
           </div>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
             >
               EPC keuring aanvragen
@@ -188,7 +188,7 @@ export default function EpcAttestGeldigheidPage() {
                 Ook voor kantoren, winkels, horecazaken en andere niet-residentiële gebouwen is een{" "}
                 <a href="https://www.vlaanderen.be/epc-pedia/info-type-a/epc-klein-niet-residentieel/toepassingsgebied-epc-klein-niet-residentieel" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">specifiek EPC attest</a>{" "}
                 (het EPC Niet Residentieel) verplicht bij verkoop en verhuur. Het EPC attest klein niet-residentieel kan u{" "}
-                <Link href="/contact" className="text-blue hover:underline">hier</Link>{" "}
+                <Link href="/?type=studio#aanvragen" className="text-blue hover:underline">hier</Link>{" "}
                 aanvragen.
               </p>
             </div>
@@ -198,13 +198,13 @@ export default function EpcAttestGeldigheidPage() {
                 Ja, in enkele specifieke gevallen is een EPC niet verplicht. Denk hierbij aan de verkoop van een{" "}
                 <a href="https://www.epcinvest.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">onbewoonbaar verklaarde woning</a>,
                 bij bepaalde erfenisregelingen zonder dat de woning op de markt komt, of voor gebouwen met een zeer beperkte bruikbare vloeroppervlakte. Je kan ons hiervoor altijd{" "}
-                <Link href="/contact" className="text-blue hover:underline">contacteren</Link>.
+                <Link href="/?type=studio#aanvragen" className="text-blue hover:underline">contacteren</Link>.
               </p>
             </div>
           </div>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
             >
               EPC keuring aanvragen
@@ -254,7 +254,7 @@ export default function EpcAttestGeldigheidPage() {
           </div>
           <div className="mt-8">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
             >
               EPC keuring aanvragen
@@ -301,7 +301,7 @@ export default function EpcAttestGeldigheidPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC attest aanvragen

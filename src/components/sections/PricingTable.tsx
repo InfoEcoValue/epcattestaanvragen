@@ -80,7 +80,7 @@ export function PricingTable() {
                 ))}
               </ul>
               <Link
-                href="/contact"
+                href={`/?type=${key}#aanvragen`}
                 className={`mt-auto inline-flex items-center justify-center px-3.5 py-3 sm:py-2.5 rounded-lg font-semibold text-sm transition-all ${
                   isFeatured
                     ? "bg-gold text-blue-deep hover:bg-gold-2 hover:text-white"

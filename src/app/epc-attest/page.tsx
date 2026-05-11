@@ -268,7 +268,7 @@ export default function EpcAttestPage() {
             Kortom, het begrijpen en optimaliseren van je EPC attest is een van de slimste investeringen die je in je woning kunt doen.
           </p>
           <Link
-            href="/contact"
+            href="/?type=studio#aanvragen"
             className="inline-flex items-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
           >
             EPC attest aanvragen
@@ -288,7 +288,7 @@ export default function EpcAttestPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC attest aanvragen

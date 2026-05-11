@@ -138,7 +138,7 @@ export default function EpcWaardenPage() {
               .
             </span>
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gold text-blue-deep font-semibold text-sm hover:bg-gold-2 hover:text-white transition-all w-full sm:w-auto justify-center sm:justify-start"
             >
               EPC waarde berekening aanvragen
@@ -374,7 +374,7 @@ export default function EpcWaardenPage() {
                   Bijvoorbeeld voor verkoop,{" "}
                   <Link href="/epc-verplicht-verhuur" className="text-blue hover:underline">verhuur</Link>{" "}
                   of het kopen van een woning? Neem dan gerust{" "}
-                  <Link href="/contact" className="text-blue hover:underline">contact op met ons</Link>{" "}
+                  <Link href="/?type=studio#aanvragen" className="text-blue hover:underline">contact op met ons</Link>{" "}
                   door op het onderstaande knop te klikken of door het formulier bovenaan de pagina in te vullen.
                 </p>
                 <p>
@@ -434,7 +434,7 @@ export default function EpcWaardenPage() {
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-3">
                 <Link
-                  href="/contact"
+                  href="/?type=studio#aanvragen"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] sm:text-base hover:bg-blue-2 transition-all"
                 >
                   EPC attest aanvragen

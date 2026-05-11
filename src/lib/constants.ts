@@ -10,7 +10,7 @@ export const BUSINESS = {
     postalCode: "3012",
     country: "BE",
   },
-  kvk: "1012.878.453",
+  btw: "BE 1030.333.802",
   serviceArea: "Vlaanderen",
   website: "https://www.epcattestaanvragen.com",
   hours: "Ma-Vr 8:30-18:00 · Za op afspraak",

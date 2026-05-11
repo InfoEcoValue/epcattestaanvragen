@@ -120,7 +120,7 @@ export function Navbar() {
               {BUSINESS.phoneDisplay}
             </a>
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="hidden sm:inline-flex items-center gap-2 px-3 sm:px-4 py-2.5 rounded-lg bg-blue text-cream font-semibold text-[13px] sm:text-[14.5px] hover:bg-blue-2 transition-all hover:-translate-y-px hover:shadow-md"
             >
               Jouw prijs berekenen
@@ -191,7 +191,7 @@ export function Navbar() {
               {BUSINESS.phoneDisplay}
             </a>
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-blue text-cream font-semibold text-[15px]"
               onClick={() => setOpen(false)}
             >

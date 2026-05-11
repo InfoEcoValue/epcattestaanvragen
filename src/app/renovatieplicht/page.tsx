@@ -381,7 +381,7 @@ export default function RenovatieplichtPage() {
           </div>
           <div className="mt-8 flex flex-col sm:flex-row gap-3">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] hover:bg-blue-2 transition-all"
             >
               EPC attest aanvragen
@@ -449,7 +449,7 @@ export default function RenovatieplichtPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC attest aanvragen

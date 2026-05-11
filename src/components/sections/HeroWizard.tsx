@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { PRICES, EXTRAS } from "@/lib/constants";
 import { ArrowRight, ArrowLeft, Check } from "lucide-react";
 
@@ -41,8 +42,17 @@ function genDays() {
 }
 
 export function HeroWizard() {
+  const searchParams = useSearchParams();
+
   const [step, setStep] = useState(0);
   const [type, setType] = useState<HomeTypeId | null>(null);
+
+  useEffect(() => {
+    const param = searchParams.get("type");
+    if (HOME_TYPES.some((t) => t.id === param)) {
+      setType(param as HomeTypeId);
+    }
+  }, [searchParams]);
   const [extras, setExtras] = useState<string[]>([]);
   const [addr, setAddr] = useState({ street: "", num: "", zip: "", city: "" });
   const [day, setDay] = useState<ReturnType<typeof genDays>[number] | null>(null);

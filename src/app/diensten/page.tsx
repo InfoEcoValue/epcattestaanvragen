@@ -116,7 +116,7 @@ export default function DienstenPage() {
                 </ul>
               </div>
               <Link
-                href="/contact"
+                href="/?type=studio#aanvragen"
                 className="inline-flex items-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-blue text-cream font-semibold text-[15px] hover:bg-blue-2 transition-all"
               >
                 EPC keuring aanvragen
@@ -184,7 +184,7 @@ export default function DienstenPage() {
                 zoals de EPC-labelpremie en MijnVerbouwPremie.
               </p>
               <Link
-                href="/contact"
+                href="/?type=studio#aanvragen"
                 className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-blue text-cream font-semibold text-sm hover:bg-blue-2 transition-all mt-2"
               >
                 Renovatieadvies aanvragen
@@ -233,7 +233,7 @@ export default function DienstenPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] bg-blue text-cream font-semibold text-[15px] hover:bg-blue-2 transition-all"
             >
               EPC simulatie aanvragen

@@ -71,7 +71,7 @@ export function EpcScale() {
             Ecovalue begeleidt het volledige traject.
           </span>
           <Link
-            href="/contact"
+            href="/?type=studio#aanvragen"
             className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-gold text-blue-deep font-semibold text-sm hover:bg-gold-2 hover:text-white transition-all w-full sm:w-auto justify-center sm:justify-start"
           >
             Renovatieadvies aanvragen

@@ -123,7 +123,7 @@ export default function EpcKeuringPrijsPage() {
               ))}
             </ul>
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center gap-2 mt-2 px-5 py-3 rounded-lg bg-blue text-cream font-semibold text-sm hover:bg-blue-2 transition-all"
             >
               Offerte aangepaste EPC-Keuring
@@ -260,14 +260,14 @@ export default function EpcKeuringPrijsPage() {
             </p>
             <p>
               Heb je graag een individuele EPC attest simulatie? Je kan jouw individuele{" "}
-              <Link href="/contact" className="text-blue hover:underline">EPC attest simulatie hier aanvragen</Link>.
+              <Link href="/?type=studio#aanvragen" className="text-blue hover:underline">EPC attest simulatie hier aanvragen</Link>.
               Heb jij toch een EPC attest nodig en niet louter een simulatie? Onze{" "}
               <Link href="/epc-attest-prijs" className="text-blue hover:underline">EPC attest prijs</Link>{" "}
               blijft schappelijk.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 mt-6">
               <Link
-                href="/contact"
+                href="/?type=studio#aanvragen"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-[10px] bg-blue text-cream font-semibold text-[15px] hover:bg-blue-2 transition-all"
               >
                 EPC-Keuring aanvragen
@@ -317,7 +317,7 @@ export default function EpcKeuringPrijsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC attest aanvragen

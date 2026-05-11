@@ -66,7 +66,7 @@ export default function HomePage() {
                   waarderen we jouw tijd en gaan we voor jou meteen aan de slag.
                 </p>
                 <Link
-                  href="/contact"
+                  href="/?type=studio#aanvragen"
                   className="inline-flex items-center gap-2 px-5 py-3 rounded-lg bg-blue text-cream font-semibold text-sm hover:bg-blue-2 transition-all"
                 >
                   EPC keuring aanvragen
@@ -94,7 +94,7 @@ export default function HomePage() {
                   en weet je niet waar beginnen? We begeleiden je stap per stap. Tot aan jouw nieuwe{" "}
                   <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">EPC label</a>{" "}
                   met een een lagere EPC waarde. Bij{" "}
-                  <Link href="/" className="text-blue hover:underline">Ecovalue</Link>{" "}
+                  <Link href="/over-ons" className="text-blue hover:underline">Ecovalue</Link>{" "}
                   kan je ook terecht voor advies en dossierbeheer voor jouw premies zoals de{" "}
                   <a href="https://www.vlaanderen.be/premies-voor-renovatie/mijn-epc-labelpremie" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">EPC labelpremie</a>{" "}
                   en{" "}
@@ -149,11 +149,11 @@ export default function HomePage() {
           </h2>
           <p className="text-[15px] sm:text-[17px] text-ink-2 leading-relaxed max-w-4xl">
             Ja, dat kan zeker. Bij Ecovalue kun je een{" "}
-            <Link href="/" className="text-blue hover:underline">epc attest aanvragen door online te starten</Link>.
+            <a href="/?type=studio#aanvragen" className="text-blue hover:underline">online aanvragen via ons formulier</a>.
             Onze erkende energiedeskundige moet wel altijd bij je langskomen voor een{" "}
             <a href="https://www.vlaanderen.be/energieprestatiecertificaten-epcs/erkende-energiedeskundigen-voor-epc/plaatsbezoek-voor-epc-door-een-energiedeskundige-type-a" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">fysiek bezoek</a>.
             Pas daarna maken we het document voor je op.
-            Je regelt dit <strong>EPC attest aanvragen</strong> heel snel met één klik op onze website.
+            Je regelt de aanvraag heel snel met één klik op onze website.
             Zodra we jouw aanvraag hebben, bellen we je op om het plaatsbezoek in te plannen.
           </p>
         </div>
@@ -169,9 +169,9 @@ export default function HomePage() {
               </h2>
               <div className="text-[14px] sm:text-[15px] text-ink-2 leading-relaxed space-y-4">
                 <p>
-                  De prijzen voor een <strong>epc attest aanvragen</strong> zijn helder en hangen af van type woning. Bij{" "}
+                  De tarieven zijn helder en hangen af van het type woning. Bij{" "}
                   <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">Ecovalue</a>{" "}
-                  kun je al een <strong>epc attest aanvragen</strong> vanaf € 126 (incl. BTW en verplaatsing). Hieronder zie je een overzicht van onze prijzen.
+                  start je al vanaf € 126 (incl. BTW en verplaatsing). Hieronder zie je een overzicht van onze prijzen.
                 </p>
               </div>
             </div>
@@ -198,7 +198,7 @@ export default function HomePage() {
               Wil je ook een{" "}
               <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">asbestattest en/of elektische keuring</a>?
               Combineer dit dan met een{" "}
-              <Link href="/" className="text-blue hover:underline">epc attest aanvragen</Link>{" "}
+              <a href="/?type=studio#aanvragen" className="text-blue hover:underline">EPC keuring</a>{" "}
               en plan <strong>meteen</strong> <strong>alle keuringen</strong> in.
             </p>
           </div>
@@ -212,7 +212,7 @@ export default function HomePage() {
             Hoe maak ik een afspraak voor de <em className="text-blue italic">EPC inspectie?</em>
           </h2>
           <p className="text-[14px] sm:text-[15px] text-ink-2 leading-relaxed mb-8 sm:mb-10 max-w-3xl">
-            Een <strong>epc attest aanvragen</strong> en een afspraak maken voor de EPC keuring bij Ecovalue is simpel. Je volgt deze stappen:
+            Een afspraak plannen bij ECOVALUE is simpel. Je volgt deze stappen:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="p-5 sm:p-7 bg-white rounded-xl sm:rounded-2xl border border-line">
@@ -220,7 +220,7 @@ export default function HomePage() {
               <h3 className="font-heading text-[16px] sm:text-[18px] font-medium mb-2">Online aanvraag</h3>
               <p className="text-[13px] sm:text-[14px] text-ink-2 leading-relaxed">
                 Je vult het{" "}
-                <Link href="/" className="text-blue hover:underline">formulier op onze site</Link>{" "}
+                <a href="/?type=studio#aanvragen" className="text-blue hover:underline">formulier bovenaan deze pagina</a>{" "}
                 in.
               </p>
             </div>
@@ -323,7 +323,7 @@ export default function HomePage() {
               Benieuwd naar onze{" "}
               <Link href="/epc-keuring-prijs" className="text-blue hover:underline">EPC keuring prijs</Link>{" "}
               per type woning? Hier kan je alvast jouw{" "}
-              <Link href="/contact" className="text-blue hover:underline">EPC attest aanvragen</Link>.
+              <a href="#aanvragen" className="text-blue hover:underline">EPC attest aanvragen</a>.
             </p>
           </div>
 
@@ -337,7 +337,7 @@ export default function HomePage() {
               <h4 className="font-heading text-[16px] sm:text-[18px] font-medium mb-3">Technische expertise</h4>
               <div className="text-[14px] sm:text-[15px] text-ink-2 leading-relaxed space-y-4">
                 <p>
-                  Dankzij ervaring in de bouwsector van onze verschillende werknemers kunnen we je advies verlenen voor jouw{" "}
+                  Dankzij de achtergrond in de bouwsector van <strong>Ermin Huskic</strong>, erkend energiedeskundige type A (<Link href="/over-ons" className="text-blue hover:underline">VEKA EP22594</Link>), kunnen we je advies verlenen voor jouw{" "}
                   <a href="https://energyking.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">energetische renovaties</a>{" "}
                   dat ook technisch uitvoerbaar is. De{" "}
                   <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">EPC label</a>{" "}
@@ -365,7 +365,7 @@ export default function HomePage() {
               <div className="text-[14px] sm:text-[15px] text-ink-2 leading-relaxed space-y-4">
                 <p>
                   De klanten die bij ons hun{" "}
-                  <Link href="/contact" className="text-blue hover:underline">EPC attest aanvragen</Link>{" "}
+                  <a href="#aanvragen" className="text-blue hover:underline">EPC attest aanvragen</a>{" "}
                   zijn tevreden omdat we de tijd nemen om alles goed na te kijken bij jouw{" "}
                   <a href="https://ecovalue.be/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">EPC attest aanvragen</a>.
                   Geen haast, geen slordigheden – zo ben jij zeker dat er niets vergeten wordt tijdens het plaatsbezoek.
@@ -422,7 +422,7 @@ export default function HomePage() {
                   De{" "}
                   <Link href="/veelgestelde-vragen" className="text-blue hover:underline">EPC</Link>{" "}
                   attest van je woning geeft je inzicht in de{" "}
-                  <a href="https://lumiworld.luminus.be/up-to-date/het-effect-van-het-epc-label-op-de-waarde-van-je-huis/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">energiezuinigheid</a>{" "}
+                  <a href="https://www.vlaanderen.be/epc-voor-een-residentiele-eenheid" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">energiezuinigheid</a>{" "}
                   en jouw EPC label 🏠.
                 </p>
                 <p>
@@ -434,8 +434,8 @@ export default function HomePage() {
                 </p>
                 <p>
                   EPC waarde E of F betekent dat je verplicht moet renoveveren, hoewel de{" "}
-                  <a href="https://ecovalue.be/renovatieplicht-residentiele-gebouwen/" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">renovatieplicht</a>{" "}
-                  <a href="https://www.dekrantenkoppen.be/detail/2562287/renovatieplicht-fors-afgezwakt-in-laatste-rechte-lijn-vlaamse-onderhandelingen.html" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">recent is afgezwakt</a>.
+                  <Link href="/renovatieplicht" className="text-blue hover:underline">renovatieplicht</Link>{" "}
+                  <a href="https://www.vlaanderen.be/een-huis-of-appartement-kopen/renovatieverplichting-voor-residentiele-gebouwen" target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">recent is afgezwakt</a>.
                 </p>
                 <p>De EPC label gaat van A+ tot F.</p>
                 <p>
@@ -463,7 +463,7 @@ export default function HomePage() {
                 </p>
                 <p>
                   Je kan hier jouw{" "}
-                  <Link href="/contact" className="text-blue hover:underline">EPC attest aanvragen</Link>.
+                  <a href="#aanvragen" className="text-blue hover:underline">EPC attest aanvragen</a>.
                 </p>
               </div>
             </div>
@@ -484,14 +484,14 @@ export default function HomePage() {
       <section className="bg-cream">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-24">
           <h2 className="font-heading font-medium text-[clamp(24px,3vw,40px)] leading-[1.1] tracking-tight mb-8 sm:mb-12">
-            Gemiddelde invloed van energetische renovaties op <em className="text-blue italic"><a href="https://ecovalue.be/renovatieplicht-residentiele-gebouwen/" target="_blank" rel="noopener noreferrer" className="hover:underline">EPC-waarden</a></em>
+            Invloed van energetische renovaties op je <em className="text-blue italic"><Link href="/epc-waarden-tabel">EPC-label</Link></em>
           </h2>
           <div className="bg-white rounded-xl sm:rounded-2xl border border-line overflow-hidden">
             <table className="w-full text-[14px] sm:text-[15px]">
               <thead>
                 <tr className="bg-blue text-cream">
                   <th className="text-left px-5 py-3.5 font-heading font-medium">Renovatie</th>
-                  <th className="text-left px-5 py-3.5 font-heading font-medium">Gemiddelde invloed op EPC waarde</th>
+                  <th className="text-left px-5 py-3.5 font-heading font-medium">Indicatieve invloed op EPC waarde*</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-line">
@@ -506,6 +506,11 @@ export default function HomePage() {
                 <tr className="hover:bg-cream/50 transition-colors"><td className="px-5 py-3.5">Plaatsing ventilatiesysteem D met warmteterugwinning</td><td className="px-5 py-3.5 font-semibold text-blue">89%</td></tr>
               </tbody>
             </table>
+            <p className="px-5 py-3 text-[11px] sm:text-[12px] text-muted border-t border-line">
+              Indicatieve inschatting op basis van{" "}
+              <a href="https://www.vlaanderen.be/epb-pedia" target="_blank" rel="noopener noreferrer" className="hover:underline">EPB-berekeningsmethodiek (VEKA)</a>.
+              Effectieve verbetering varieert per woning en beginsituatie.
+            </p>
           </div>
         </div>
       </section>
@@ -635,14 +640,14 @@ export default function HomePage() {
               <div className="text-[13px] sm:text-[14px] text-ink-2 leading-relaxed space-y-3">
                 <p>
                   Controleer de geldigheidsduur van de EPC-attest, aangezien deze beperkt is tot{" "}
-                  <a href="https://www.bobex.be/nl-be/epc-certificaat/verplicht-bij-verkoop/geldigheid/#:~:text=Een%20EPC%20attest%20(ook%20wel,%2C%20blijft%205%20jaar%20geldig)." target="_blank" rel="noopener noreferrer" className="text-blue hover:underline">10 jaar</a>{" "}
+                  <Link href="/epc-attest-geldigheid" className="text-blue hover:underline">10 jaar</Link>{" "}
                   na de{" "}
                   <Link href="/diensten" className="text-blue hover:underline">EPC-keuring</Link>.
                   Als het EPC-attest verouderd is, kan het nodig zijn om een nieuwe epc keuring te laten uitvoeren. De kostprijs van een EPC keuring bij ECOVALUE loopt vanaf 126€ voor studios (incl. BTW en verplaatsing).
                 </p>
                 <p>
                   Overweeg het advies van de{" "}
-                  <Link href="/" className="text-blue hover:underline">erkende EPC energiedeskundige</Link>{" "}
+                  <Link href="/over-ons" className="text-blue hover:underline">erkende EPC energiedeskundige</Link>{" "}
                   en bespreek de mogelijke{" "}
                   <Link href="/diensten#energetische-renovatie" className="text-blue hover:underline">energetische renovaties</Link>{" "}
                   na de EPC keuring.
@@ -664,7 +669,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/contact"
+              href="/?type=studio#aanvragen"
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-[10px] bg-gold text-blue-deep font-semibold text-[15px] sm:text-base hover:bg-gold-2 hover:text-white transition-all"
             >
               EPC attest aanvragen
